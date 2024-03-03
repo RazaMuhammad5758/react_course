@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from './Header'
-import { Card, Container, Row, Button } from 'react-bootstrap'
+import { Card, Container, Row, Button, Col } from 'react-bootstrap'
 import './App.css'
+import { blog } from './Data/blog'
 
 
 const App = () => {
@@ -22,11 +23,14 @@ const App = () => {
         </Header> */}
 
        <Container>
-        <Row>
+        <Row className='row'>
+          { blog.map((v,i)=>{
+            return(
+              <ProductItems/>
 
-          <ProductItems/>
-          <ProductItems/>
-          <ProductItems/>
+            )
+          })}
+        
         
         
         </Row>
@@ -41,7 +45,7 @@ function ProductItems(){
 
   return(
     
-    <col-lg-3>
+    <Col lg="3" md="6">
       <Card style={{ width: '18rem' }}>
       
       <Card.Body>
@@ -53,7 +57,7 @@ function ProductItems(){
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
-    </col-lg-3>
+    </Col>
     )
 }
 export default App
