@@ -26,7 +26,7 @@ const App = () => {
         <Row className='row'>
           { blog.map((v,i)=>{
             return(
-              <ProductItems/>
+              <ProductItems pitems={v}/>
 
             )
           })}
@@ -41,23 +41,22 @@ const App = () => {
 }
 
 
-function ProductItems(){
+function ProductItems({pitems}){
 
   return(
     
-    <Col lg="3" md="6">
+    <div className='col-lg-3 md-4'>
       <Card style={{ width: '18rem' }}>
       
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h4><Card.Title>{pitems.title}</Card.Title></h4>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {pitems.body}
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
-    </Col>
+    </div>
     )
 }
 export default App
