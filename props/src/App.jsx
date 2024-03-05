@@ -22,7 +22,7 @@ const App = () => {
           <h1>Header Section</h1>
         </Header> */}
 
-       <Container>
+       {/* <Container>
         <Row className='row'>
           { blog.map((v,i)=>{
             return(
@@ -34,7 +34,7 @@ const App = () => {
         
         
         </Row>
-        </Container> 
+        </Container>  */}
 
     </div>
   )
