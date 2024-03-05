@@ -26,7 +26,7 @@ const App = () => {
         <Row className='row'>
           { blog.map((v,i)=>{
             return(
-              <ProductItems pitems={v}/>
+              <ProductItems pitems={v} key={i}/>
 
             )
           })}
@@ -49,7 +49,7 @@ function ProductItems({pitems}){
       <Card style={{ width: '18rem' }}>
       
       <Card.Body>
-        <h4><Card.Title>{pitems.title}</Card.Title></h4>
+        <h3><Card.Title>{pitems.title}</Card.Title></h3>
         <Card.Text>
           {pitems.body}
         </Card.Text>
