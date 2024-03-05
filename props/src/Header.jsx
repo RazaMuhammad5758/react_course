@@ -7,6 +7,7 @@ const Header = ({info, children}) => {
       <h1>This is Header</h1>
       <p>{info.name} {info.age} {children}</p>
     <img src={raza} alt=""  width={200}/>
+    
     </div>
   )
 }

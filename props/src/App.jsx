@@ -35,7 +35,7 @@ const App = () => {
         
         </Row>
         </Container>  */}
-
+      <button className='bg-[red] p-[10px]' onClick={eventprac}>Click</button>
     </div>
   )
 }
@@ -58,5 +58,10 @@ function ProductItems({pitems}){
     </Card>
     </div>
     )
+}
+
+
+let eventprac=()=>{
+  alert("Hello World")
 }
 export default App
