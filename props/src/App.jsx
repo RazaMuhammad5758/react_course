@@ -1,15 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Header from './Header'
 import { Card, Container, Row, Button, Col } from 'react-bootstrap'
 import './App.css'
 import { blog } from './Data/blog'
 
 
+// Use State (Hook)
+
+
 const App = () => {
+  const [count, setCount] = useState(1)
+
+  let increment=()=>{
+    if (count<20){
+      setCount(count+1)
+    }else{
+      setCount(1)
+      alert("Limit Exceed")
+    }
+    
+  }
+
+  const [decr, setDecr] = useState(1)
+  let decrement=()=>{
+    if (decr>-10){
+      setDecr(decr-1)
+    }else{
+      setDecr(1)
+      alert("Limit Exceed")
+    }
+    
+  }
   let info={
     name:"John",
     age:30
   }
+
+
   return (
 
     
@@ -35,7 +62,10 @@ const App = () => {
         
         </Row>
         </Container>  */}
-      <button className='bg-[red] p-[10px]' onClick={eventprac}>Click</button>
+      <button className='bg-[red] p-[10px]' onClick={increment}>Click(+)</button> <br />
+      <p>{count}</p>
+      <button className='bg-[red] p-[10px]' onClick={decrement}>Click(-)</button> <br />
+      <p>{decr}</p>
     </div>
   )
 }
@@ -61,7 +91,5 @@ function ProductItems({pitems}){
 }
 
 
-let eventprac=()=>{
-  alert("Hello World")
-}
+
 export default App
