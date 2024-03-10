@@ -7,28 +7,32 @@ const App = () => {
   const redBox = () => {
     if (box === 1) { // Check if it's the first click
       setTimeout(() => {
-        setBox(2); // Transition to orange after 5 seconds
+        setBox(6); // Set box count to 6 after 5 seconds
+        document.querySelector('.box').style.backgroundColor = 'orange'; 
+        document.querySelector('.box').innerHTML = 'Ready'; 
       }, 5000);
-    } else if (box === 2) { // Check if box is orange
+    } else if (box > 6) { // Reset box count and styles after 5 clicks
       setTimeout(() => {
-        setBox(3); // Transition to green after 5 seconds
+        setBox(); // Reset box count after 5 clicks
+        document.querySelector('.box').style.backgroundColor = 'green'; 
+        document.querySelector('.box').innerHTML = 'Go'; 
       }, 5000);
-    } else if (box === 3) { // Check if box is green
+    } 
+    else if (box > 5) { // Reset box count and styles after 5 clicks
       setTimeout(() => {
-        setBox(4); // Reset box count after 5 seconds
+        setBox(1); // Reset box count after 5 clicks
+        document.querySelector('.box').style.backgroundColor = 'red'; 
+        document.querySelector('.box').innerHTML = 'Stop'; 
       }, 5000);
+    } else {
+      setBox(box + 1); // Increment box count
     }
   };
-
-  useEffect(() => {
-    // Trigger redBox function automatically when component mounts
-    redBox();
-  }, []); // Empty dependency array to run the effect only once
 
   return (
     <div>
       <button onClick={redBox}>Click</button>
-      <div className='box'>{box === 1 ? 'Stop' : box === 2 ? 'Ready' : box === 3 ? 'Go' : ''}</div>
+      <div className='box'>Stop</div>
     </div>
   );
 };
