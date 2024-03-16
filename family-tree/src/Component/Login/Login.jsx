@@ -6,8 +6,11 @@ const Login = () => {
     <div>
       <div className="main">
         <div className="left">
-            <h1>Welcome to Family Tree</h1>
-            <h1>Applicaion</h1>
+           <div>
+
+            <h1 className='welcome'>Welcome to Family Tree</h1>
+            <h1 className='app'>Applicaion</h1>
+           </div>
         </div>
         <div className="right">
             <h3>Log in to your account</h3>

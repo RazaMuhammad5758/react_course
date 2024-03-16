@@ -10,6 +10,19 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        line-height: 15px;
+
+        .welcome{
+            color: rgb(243, 223, 156);
+            text-shadow: 2px 2px 5px black;
+        }
+        
+        .app{
+            text-shadow: 2px 2px 5px orangered;
+            
+        }
     }
     
     .right{
