@@ -17,7 +17,7 @@ const Login = () => {
     // console.log("yes working ", e.target.value);
 //  setValue({...value, [e.target.name]: e.target.value})
 setValue((prev)=>({...prev, [e.target.name]: e.target.value}))
- console.log(value);
+ console.log("input",value);
 
   }
   return (
