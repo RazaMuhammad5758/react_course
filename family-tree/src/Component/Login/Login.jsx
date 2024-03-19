@@ -1,8 +1,25 @@
 import React from 'react'
 import './Login.scss'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const Login = () => {
+
+
+  const [value, setValue] = useState({
+
+    email: '',
+    password: ''
+  })
+
+
+  const handleChange = (e) => {
+    // console.log("yes working ", e.target.value);
+//  setValue({...value, [e.target.name]: e.target.value})
+setValue((prev)=>({...prev, [e.target.name]: e.target.value}))
+ console.log(value);
+
+  }
   return (
     <div>
       <div className="main">
@@ -24,13 +41,13 @@ const Login = () => {
 
             <div className='input'>
             <label htmlFor="email">Email</label><br />
-            <input type="email" name="email" id="email" placeholder='Enter your email'/>
+            <input onChange={handleChange} type="email" name="email" id="email" placeholder='Enter your email'/>
             </div>
 
             
             <div className='input'>
             <label htmlFor="password">Password</label><br />
-            <input type="password" name="password" id="password" placeholder='Enter your password'/>
+            <input onChange={handleChange} type="password" name="password" id="password" placeholder='Enter your password'/>
             </div>
 
             <div id='remember'>
@@ -40,7 +57,8 @@ const Login = () => {
               <a href="#">Forgot Password?</a>
             </div>
 
-            <button className='login'>Log in</button>
+          <Link to="/Home"><button className='login'>Log in</button></Link>
+            
           <Link to="/signup"><button className='signup'>Sign up</button></Link>  
           </div>
 
