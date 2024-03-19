@@ -14,8 +14,6 @@ const Login = () => {
 
 
   const handleChange = (e) => {
-    // console.log("yes working ", e.target.value);
-//  setValue({...value, [e.target.name]: e.target.value})
 setValue((prev)=>({...prev, [e.target.name]: e.target.value}))
  console.log("input",value);
 
