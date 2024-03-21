@@ -1,19 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.scss'
 import { MdAdd } from "react-icons/md";
 import { FaFolder } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { MdFamilyRestroom } from "react-icons/md";
+import { Link } from 'react-router-dom';
+import Model1 from '../Model 1/Model1';
 
 const Home = () => {
+
+  const [show, setShow] = useState(false)
+  
+  const handleShow =()=>{
+    setShow(true)
+  }
+  
+  const handleClose =()=>{
+    setShow(false)
+  }
+
   return (
     <div>
       <div className="main_Home">
         <div className="left_Home">
             <div className="up_btns">
 
-            <button> <MdAdd /> Create a new account</button>
+            <button onClick={handleShow}> <MdAdd /> Create a new tree</button>
+            
             <button> <FaFolder /></button>
             </div>
 
@@ -40,6 +54,7 @@ const Home = () => {
                 
         </div>
       </div>
+      {show && <Model1 handleClose={handleClose} show={show}  />}
     </div>
   )
 }
