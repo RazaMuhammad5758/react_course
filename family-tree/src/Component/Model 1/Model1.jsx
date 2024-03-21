@@ -12,9 +12,34 @@ const Model1=({show, handleClose})=> {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Describe your new tree</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>
+            <div>
+                <label htmlFor="name">Tree Name</label>
+                <input type="text" name="name" id="name" placeholder='Enter your tree name' />
+            </div><br />
+            <div>
+                <label htmlFor="desc">Tree Description</label>
+                <input type="text" name="desc" id="desc" placeholder='Enter tree description' />
+            </div>
+            <br />
+            <div>
+                <label htmlFor="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder='Enter your first name' />
+            </div><br />
+            <div>
+                <label htmlFor="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder='Enter your last name' />
+            </div><br />
+            <div>
+                <p>Gender</p>
+                <input type="radio" name="gender" id="male" />
+                <label htmlFor="male">Male</label>
+                <input type="radio" name="gender" id="female" />
+                <label htmlFor="female">Female</label>
+            </div>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
