@@ -9,4 +9,3 @@ const RootLayout = () => {
 }
 
 export default RootLayout
-RootLayout
