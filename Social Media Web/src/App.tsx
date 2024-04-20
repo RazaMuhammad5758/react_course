@@ -1,12 +1,19 @@
+import {Routes, Route} from 'wouter'
 import './global.css'
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">
-      Hello Snapbook!
-    </h1>
-    </div>
+    <main className='flex h-screen'>
+        <Routes>
+            {/* Public Routes */}
+            <Route path='/sign-in' element = {<SignInForm/>}/>
+
+
+
+            {/* Private Routes */}
+            <Route path='/index' element = {<Home/>}/>
+        </Routes>
+    </main>
   )
 }
 
