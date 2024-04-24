@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ;
+}
+.nav .logo{
+    margin-left: 100px;
+    
+}
+.nav .logo img{
+    width: 100px;
+    
+
+}
+
+
+.nav .signIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 100px;
+}
+.nav .signIn button{
+    
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+.nav .signIn svg{
+    color: black;
+    font-size: 50px;
+    
+}
