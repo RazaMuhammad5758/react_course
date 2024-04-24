@@ -1,18 +1,22 @@
 import React from 'react'
 
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import First from './components/First/First'
-import Second from './components/Second/Second'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './components/Home/Home'
+import Diagnose from './components/Diagnose/Diagnose'
+import DiagnosePage from './Pages/DiagnosePage/DiagnosePage'
+
 
 const App = () => {
   return (
     <div>
-      
-      <Header/>
-      <First/>
-      <Second/>
-      <Footer/>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/diagnose' element={<DiagnosePage/>} />
+      </Routes>
+      </BrowserRouter>
+     
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './First.css'
+import { Link } from 'react-router-dom'
 
 const First = () => {
   return (
@@ -15,7 +16,7 @@ const First = () => {
             <p>Get quick solutions for crop issues! <br />Find Comprehensive Disease Info <br />
             And Care Tips In Seconds</p>
 
-            <button className='Down-btn'>Download Now</button>
+           <Link style={{ textDecoration: 'none' }} to="/diagnose"><button className='Down-btn'>Diagnose Now</button></Link> 
         </div>
         
       </div>
