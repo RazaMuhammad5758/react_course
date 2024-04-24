@@ -5,6 +5,9 @@ const First = () => {
   return (
     <div>
       <div className="container-main">
+        
+          <img src="/public/Pics/bg.png" alt="first" />
+        
         <div className="text">
             <h1 className='hed-1'>IDENTIFY AND CURE</h1>
             <h1 className='hed-2'>PLANT DISEASES</h1>

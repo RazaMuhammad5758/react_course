@@ -3,6 +3,7 @@ import React from 'react'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import First from './components/First/First'
+import Second from './components/Second/Second'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       
       <Header/>
       <First/>
+      <Second/>
       <Footer/>
     </div>
   )
