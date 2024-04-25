@@ -1,6 +1,8 @@
 import React from 'react'
 import './Header.css'
 import { IoPersonCircleOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   return (
@@ -8,7 +10,7 @@ const Header = () => {
       <div className="container">
         <div className="nav">
           <div className="logo">
-            <img src="/public/Pics/Logo.png" alt="logo" />
+            <Link to="/First">  <img src="/public/Pics/Logo.png" alt="logo" /> </Link>
           </div>
           <div className="signIn">
             <button>Sign In</button>
