@@ -6,6 +6,7 @@ import Second from '../Second/Second'
 import Third from '../Third/Third'
 import Four from '../Four/Four'
 import Footer from '../Footer/Footer'
+import DiseaseDet from '../DiseaseDet/DiseaseDet'
 
 
 
@@ -18,6 +19,7 @@ Home = () => {
       <Second/>
       <Third/>
       <Four/>
+      <DiseaseDet/>
       <Footer/>
       
     </div>
