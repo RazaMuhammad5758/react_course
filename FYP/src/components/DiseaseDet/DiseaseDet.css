@@ -12,6 +12,10 @@
     
 }
 
+.disease h1{
+    margin-top: 100px;
+}
+
 .dis-images{
     display: flex;
     flex-direction: row;

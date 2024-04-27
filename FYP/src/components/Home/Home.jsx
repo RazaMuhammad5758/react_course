@@ -19,7 +19,6 @@ Home = () => {
       <Second/>
       <Third/>
       <Four/>
-      <DiseaseDet/>
       <Footer/>
       
     </div>
