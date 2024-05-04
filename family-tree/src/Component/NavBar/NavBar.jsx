@@ -21,7 +21,7 @@ const NavBar = () => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <NavDropdown title="Your Trees" style={{ color: "white" , }} id="navbarScrollingDropdown">
+              <NavDropdown title ="  Your Trees"  id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3" >Tree 1</NavDropdown.Item>
                 <NavDropdown.Item href="#action4" >Tree 2</NavDropdown.Item>
               </NavDropdown>
