@@ -24,13 +24,14 @@ const Signup = () => {
     <div>
       <div className="main">
         <div className="left">
+
+          
            <div>
 
             <h1 className='welcome'>Welcome to Family Tree</h1>
             <h1 className='app'>Application</h1>
            </div>
-        </div>
-        <div className="right">
+           <div className="right">
 
           <div className="box">
             
@@ -62,6 +63,8 @@ const Signup = () => {
           </div>
 
         </div>
+        </div>
+        
       </div>
     </div>
   )

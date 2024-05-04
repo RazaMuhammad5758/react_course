@@ -27,8 +27,7 @@ setValue((prev)=>({...prev, [e.target.name]: e.target.value}))
             <h1 className='welcome'>Welcome to Family Tree</h1>
             <h1 className='app'>Application</h1>
            </div>
-        </div>
-        <div className="right">
+           <div className="right">
 
           <div className="box">
             
@@ -59,6 +58,8 @@ setValue((prev)=>({...prev, [e.target.name]: e.target.value}))
             
           <Link to="/signup"><button className='signup'>Sign up</button></Link>  
           </div>
+
+        </div>
 
         </div>
       </div>
